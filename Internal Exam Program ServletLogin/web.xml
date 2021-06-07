@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>valide</servlet-name>
+        <servlet-class>valide</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>owner</servlet-name>
+        <servlet-class>owner</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>renter</servlet-name>
+        <servlet-class>renter</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>broker</servlet-name>
+        <servlet-class>broker</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>valide</servlet-name>
+        <url-pattern>/valide</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>owner</servlet-name>
+        <url-pattern>/owner</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>renter</servlet-name>
+        <url-pattern>/renter</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>broker</servlet-name>
+        <url-pattern>/broker</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>
