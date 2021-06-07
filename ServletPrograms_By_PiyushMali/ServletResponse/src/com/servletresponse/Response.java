@@ -1,4 +1,4 @@
-package com.bridgelabz.servletresponse;
+package com.servletresponse;
 
 import java.io.IOException;
 import java.io.PrintWriter;
